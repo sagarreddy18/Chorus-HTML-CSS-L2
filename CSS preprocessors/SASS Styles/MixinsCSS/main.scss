@@ -1,0 +1,12 @@
+// Import the mixins
+@use 'mixins';
+
+// Primary button
+.primary-button {
+  @include mixins.button(#3498db);  // Blue button with default padding
+}
+
+// Secondary button
+.secondary-button {
+  @include mixins.button(#e74c3c, 15px);  // Red button with custom padding
+}

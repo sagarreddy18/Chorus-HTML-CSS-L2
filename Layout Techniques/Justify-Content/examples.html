@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-Box</title>
+    <style>
+        .div1 {
+            background-color: blue;
+            padding: 30px;
+            /* order: 3; */
+        }
+
+        .div2 {
+            background-color: green;
+            margin-left: 2px;
+            padding: 30px;
+            /* order:1; */
+        }
+
+        /* To keep two divs side by side we can add below flex propety */
+        section {
+            display:flex;
+            border: 5px solid grey;
+            box-sizing: border-box;
+            /* flex-direction: row-reverse; ---->this will reverse the items wuithin the section */
+        }
+        .a{
+            justify-content: flex-start;
+            flex-wrap: wrap;
+        }
+        .b{
+            justify-content: flex-end;
+        }
+        .c{
+            justify-content:center;
+        }
+        .d{
+            justify-content: space-between;
+        }
+        .e{
+            justify-content: space-around;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <h3>Flex-Start</h3>
+    <section class="a">
+        <div class="div1">Hello This is div1</div>
+        <div class="div2">Hello This is div2</div>
+    </section>
+    <h3>Flex-End</h3>
+    <section class="b">
+        <div class="div1">Hello This is div1</div>
+        <div class="div2">Hello This is div2</div>
+    </section>
+    <h3>Center</h3>
+    <section class="c">
+        <div class="div1">Hello This is div1</div>
+        <div class="div2">Hello This is div2</div>
+    </section>
+    <h3>Space-Between</h3>
+    <section class="d">
+        <div class="div1">Hello This is div1</div>
+        <div class="div2">Hello This is div2</div>
+    </section>
+    <h3>Space-Around</h3>
+    <section class="e">
+        <div class="div1">Hello This is div1</div>
+        <div class="div2">Hello This is div2</div>
+    </section>
+
+    </body>
+</html>

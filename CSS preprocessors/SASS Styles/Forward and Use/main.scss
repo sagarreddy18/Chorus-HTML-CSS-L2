@@ -1,0 +1,13 @@
+// main.scss
+@use 'index';
+
+body {
+  font-family: index.$font-family;
+  font-size: index.$font-size-base;
+  background-color: index.$primary-color;
+  color: white;
+}
+
+h1 {
+  color: index.$secondary-color;
+}

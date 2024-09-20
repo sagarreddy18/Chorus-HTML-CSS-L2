@@ -1,0 +1,12 @@
+// _base.scss
+
+// Base class for button styles
+.button {
+    border-radius: 5px;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  

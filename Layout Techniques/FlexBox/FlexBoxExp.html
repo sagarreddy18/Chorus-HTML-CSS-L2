@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-Box</title>
+    <style>
+        .div1 {
+            background-color: blue;
+        }
+
+        .div2 {
+            background-color: green;
+            margin-left: 5px;
+        }
+
+        /* To keep two divs side by side we can add below flex propety */
+        section {
+            display:flex;
+        }
+
+        .div3 .div4 {
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="div1">Hello This is div1</div>
+        <div class="div2">Hello This is div2</div>
+    </section>
+    <section>
+        <div class="div3">
+            <h2>Unicorns</h2>
+            <p>Majestic, magical myths.</p>
+        </div>
+        <div class="div4">
+            <h2>Narwhals</h2>
+            <p>Noteworthy, nice normal.</p>
+        </div>
+
+
+    </section>
+</body>
+
+</html>
