@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables Example</title>
+    <style>
+        /* Define CSS variables globally using :root */
+        :root {
+            --primary-color: #3498db;
+            --secondary-color: #2ecc71;
+            --text-color: #fff;
+            --font-size: 16px;
+            --padding: 10px;
+        }
+
+        body {
+            background-color: var(--primary-color);
+            color: var(--text-color);
+            font-size: var(--font-size);
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        h1 {
+            font-size: calc(var(--font-size) * 2);
+            margin-bottom: var(--padding);
+        }
+
+        button {
+            background-color: var(--secondary-color);
+            color: var(--text-color);
+            border: none;
+            padding: var(--padding);
+            font-size: var(--font-size);
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: var(--primary-color);
+        }
+
+        /* Responsive: change font size on smaller screens */
+        @media (max-width: 600px) {
+            :root {
+                font-size: calc(var(--font-size) + 2px); /* Increases the original --font-size by 2px */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to CSS Variables</h1>
+        <button>Click Me</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+/* rootInherit.css */
+body {
+    background-color: var(--primary-color); /* Using the primary color from rootfile.css */
+    color: var(--text-color);
+    font-size: var(--font-size);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+button {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    border: none;
+    padding: var(--padding);
+    font-size: var(--font-size);
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: var(--primary-color);
+}
